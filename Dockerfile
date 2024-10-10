@@ -8,7 +8,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
 
 # Clone the GitHub repository (replace with your own repo URL)
-RUN git clone https://github.com/<your-username>/<your-repo>.git .
+RUN git clone https://github.com/lileetung/streamlit-docker.git .
 
 # Install Python dependencies from requirements.txt
 RUN pip install -r requirements.txt
